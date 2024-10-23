@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.qorap{
+    border: 2px solid rgb(0, 0, 0);
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    transition-duration: 400px;
+    animation-name: qorap;
+    transition-duration: 1s;
+}
+.qorap:hover{
+    width: 200px;
+    height: 200px;
+    background-color: burlywood;
+    transform: rotate(360deg)
+    
+
+}
+
+.qorap-2{
+    width: 100px;
+    height: 100px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: red;
+    border-radius: 200px;
+    
+}
+.box-2{
+    border: 1px solid red;
+    width: 400px;
+    height: 100px;
+    margin: 10px;
+}
+.cirkul{
+    border: 1px solid red;
+    border-radius: 100%;
+    width: 200px ;
+    height:199px ;
+    background-color: red;
+    animation-name: cirkul 5s infinite;
+}
+
+@keyframes cirkul {
+    0%{
+        transform: translate(0%)
+    }
+    50%{
+        transform: translate(240%)
+    }
+    240%{
+        transform: translate(0%)
+    }
+}
+.box-3{
+    border: 25px solid rgb(189, 192, 209);
+    border-radius: 100%;
+    border-right: 25px solid royalblue;
+    width: 200px;
+    height: 200px;
+    margin: 100px;
+    animation-name: box-3;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes box-3{
+    to{
+        transform: rotate(1turn);
+    }
+}
+
+@keyframes qorap {
+    0%{
+       transform: rotate(180deg);
+    }
+    45%{
+        transform: rotate(360deg);
+    }
+}
